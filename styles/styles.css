@@ -1,12 +1,16 @@
+body{
+   margin: 0;
+   font-family: 'Harrington', 'Segoe Print', sans-serif;
+}
 .st{
     width: 850px;
-    margin-left: 230px ;
+    height: 2000px;
+    margin: 0 auto;
     background-color:lavenderblush;
 }
 h1{
     color:black;
-    font-family: 'Harrington';
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
     margin-top: 0%;
  }
@@ -22,15 +26,54 @@ h1{
 
  }
  ol{
-    font-size: 20px;
+    font-size: 23px;
     margin-left: 65px;
     margin-top: -1%;
  }
  .tabl{
     text-align: center;
     font-size: 20px;
-    margin-left: 13%;
+    margin: 0 auto;
  }
  iframe{
-    margin-left: 150px;
+   margin-left: 150px;
  }
+ ul{
+   list-style-type: none;
+   margin: 0;
+ }
+a{
+   text-decoration: none;
+   color: inherit;
+}
+.nav li{
+   display: inline-block;
+   color: black;
+   font-weight: bold;
+   font-size: 18px;
+   padding: 0 20px;
+   padding-left: 33px;
+}
+.nav li :hover{
+   color: red;
+}
+.cont{
+    width: 850px;
+    height: 50px;
+    margin: 0 auto;
+    background-color:lavenderblush;
+    line-height: 50px;
+}
+.ch{
+   margin-top: 0%;
+}
+.chris{
+   margin-left: 20px;
+}
+.inf{
+   margin-top: -28%;
+   margin-left: 260px;
+   font-size: 16px;
+   font-family: 'Segoe Print', sans-serif;
+   padding-right: 12px;
+}
