@@ -18,8 +18,23 @@
             <li><a href="about.html">Про нас</a></li>
         </ul>
     </nav>
-    <div class="st">
-        <img src="images/banner.jpg" alt="банер" width="850" height="300">
+    <div class="st"> 
+        <ul id="slides"> 
+            <li class="slide showing"><img src="images/slid1.jpg" alt="banner" width="850" height="300"></li> 
+            <li class="slide"><img src="images/slid2.jpg" alt="banner" width="850" height="300"></li> 
+            <li class="slide"><img src="images/slid3.jpg" alt="banner" width="850" height="300"></li> 
+            <li class="slide"><img src="images/slid4.jpg" alt="banner" width="850" height="300"></li>
+        </ul>
+        <script>
+            var slides = document.querySelectorAll('#slides .slide'); 
+            var currentSlide = 0; 
+            var slideInterval = setInterval(nextSlide,3000); 
+            function nextSlide() { 
+                slides[currentSlide].className = 'slide'; 
+                currentSlide = (currentSlide+1)%slides.length; 
+                slides[currentSlide].className = 'slide showing';
+            }
+        </script>
         <h1>Motionless In White</h1>
         <h2>Популярні треки</h2>
         <ol>

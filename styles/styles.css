@@ -4,7 +4,6 @@ body{
 }
 .st{
     width: 850px;
-    height: 2000px;
     margin: 0 auto;
     background-color:lavenderblush;
 }
@@ -42,7 +41,7 @@ h1{
    list-style-type: none;
    margin: 0;
  }
-a{
+ a{
    text-decoration: none;
    color: inherit;
 }
@@ -56,6 +55,7 @@ a{
 }
 .nav li :hover{
    color: red;
+   transition: all .60s ease;
 }
 .cont{
     width: 850px;
@@ -63,17 +63,100 @@ a{
     margin: 0 auto;
     background-color:lavenderblush;
     line-height: 50px;
+    border-bottom: inset rgb(59, 22, 22) 3px;
 }
+
 .ch{
    margin-top: 0%;
+   margin-left: 15%;
 }
 .chris{
    margin-left: 20px;
 }
 .inf{
-   margin-top: -28%;
-   margin-left: 260px;
+   margin-top: -27%;
+   padding-left: 260px;
    font-size: 16px;
    font-family: 'Segoe Print', sans-serif;
-   padding-right: 12px;
+   padding-right: 14px;
 }
+.ric{
+   margin-top: 0%;
+   margin-left: 50%;
+}
+.ricky{
+   margin-left: 70%;
+}
+.inff{
+   margin-top: -27%;
+   padding-left: 14px;
+   font-size: 16px;
+   font-family: 'Segoe Print', sans-serif;
+   padding-right: 260px;
+}
+.vin{
+   margin-top: 0%;
+   margin-left: 20%;
+}
+.vinny{
+   margin-left: 20px;
+}
+.infa{
+   margin-top: -27%;
+   padding-left: 260px;
+   font-size: 16px;
+   font-family: 'Segoe Print', sans-serif;
+   padding-right: 14px;
+}
+.jus{
+   margin-top: 9%;
+   margin-left: 50%;
+}
+.justin{
+   margin-left: 70%;
+}
+.inju{
+   margin-top: -27%;
+   padding-left: 14px;
+   font-size: 16px;
+   font-family: 'Segoe Print', sans-serif;
+   padding-right: 260px;
+}
+.ray{
+   margin-top: 9%;
+   margin-left: 20%;
+}
+.ryan{
+   margin-left: 20px;
+}
+.inry{
+   margin-top: -27%;
+   padding-left: 260px;
+   font-size: 16px;
+   font-family: 'Segoe Print', sans-serif;
+   padding-right: 14px;
+}
+#slides { 
+   position: relative; 
+   height: 300px; 
+   padding: 0px; 
+   margin: 0px; 
+   list-style-type: none; 
+} 
+   .slide { position: absolute; 
+      left: 0px; 
+      top: 0px; 
+      width: 100%; 
+      height: 100%; 
+      opacity: 0; 
+      z-index: 1; 
+      -webkit-transition: opacity 1s; 
+      -moz-transition: opacity 1s; 
+      -o-transition: opacity 1s; 
+      transition: opacity 1s; 
+   } 
+   .showing { 
+      opacity: 1; 
+      z-index: 2; 
+   }
+   
