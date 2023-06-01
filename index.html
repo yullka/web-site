@@ -16,6 +16,7 @@
             <li><a href="news.html">Новини</a></li>
             <li><a href="merch.html">Мерч</a></li>
             <li><a href="about.html">Про нас</a></li>
+            <li><a href="review.php">Відгуки</a></li>
         </ul>
     </nav>
     <div class="st"> 
@@ -28,7 +29,7 @@
         <script>
             var slides = document.querySelectorAll('#slides .slide'); 
             var currentSlide = 0; 
-            var slideInterval = setInterval(nextSlide,3000); 
+            var slideInterval = setInterval(nextSlide,3500); 
             function nextSlide() { 
                 slides[currentSlide].className = 'slide'; 
                 currentSlide = (currentSlide+1)%slides.length; 
@@ -79,6 +80,13 @@
         <h3>Веселі моменти Motionless In White</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/BquMiq0FRJM" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h3>Залишити відгук</h3>
+        <form action="review.php" method="POST">
+            <input type="text" name="author" placeholder="Ваше ім'я" required><br>
+            <textarea name="message" placeholder="Ваш відгук" required></textarea><br>
+            <button type="submit">Додати відгук</button>
+        </form>
     </div>
 </body>
 </html>
